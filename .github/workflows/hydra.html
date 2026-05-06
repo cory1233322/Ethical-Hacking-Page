@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hydra</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Hydra — Login Testing Tool</h1>
+</header>
+
+<nav>
+<a href="wireshark.html">← Wireshark</a>
+<a href="index.html">Home</a>
+<a href="bruteforce.html">Next → Brute Force</a>
+</nav>
+
+<div class="container">
+
+<div class="card">
+<h2>What Hydra Does</h2>
+<p>
+Hydra is a tool used to test login systems by automatically trying many username and password combinations.
+</p>
+</div>
+
+<div class="card">
+<h2>Wordlists</h2>
+<p>
+A wordlist is a file containing possible passwords. Hydra uses this list to attempt logins systematically.
+</p>
+</div>
+
+<div class="card">
+<h2>Example Command</h2>
+<pre>
+hydra -l admin -P rockyou.txt ssh://192.168.1.50
+</pre>
+<p>
+This tests the username "admin" against a password list on an SSH service.
+</p>
+</div>
+
+<div class="card">
+<h2>Ethics</h2>
+<p>
+Using Hydra without permission is illegal. Organizations protect against it using MFA, account lockouts, and rate limiting.
+</p>
+</div>
+
+</div>
+
+</body>
+</html>
